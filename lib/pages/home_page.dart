@@ -44,48 +44,40 @@ class _HomePageState extends State<HomePage> {
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(125),
                       child: const Image(
-                        image: AssetImage("assets/images/logo.png"),
+                        image: AssetImage("assets/images/logo.jpeg"),
                         fit: BoxFit.cover,
                       ),
                     ),
                   ),
                   const SizedBox(height: 10,),
-                  Expanded(
-                    child: ListTile(
-                      onTap: () => _onPageChanged(0),
-                      leading: Icon(Icons.home_filled, size: _iconSize(0), color: _iconColor(0)),
-                      title: Text("Home"),
-                    ),
+                  ListTile(
+                    onTap: () => _onPageChanged(0),
+                    leading: Icon(Icons.home_filled, size: _iconSize(0), color: _iconColor(0)),
+                    title: Text("Home"),
                   ),
                   const SizedBox(
                     height: 20,
                   ),
-                  Expanded(
-                    child: ListTile(
-                      onTap: () => _onPageChanged(1),
-                      leading: Icon(Icons.search, size: _iconSize(1), color: _iconColor(1)),
-                      title: Text("Search"),
-                    ),
+                  ListTile(
+                    onTap: () => _onPageChanged(1),
+                    leading: Icon(Icons.search, size: _iconSize(1), color: _iconColor(1)),
+                    title: Text("Search"),
                   ),
                   const SizedBox(
                     height: 20,
                   ),
-                  Expanded(
-                    child: ListTile(
-                      onTap: () => _onPageChanged(2),
-                      leading: Icon(CupertinoIcons.chat_bubble_text_fill, size: _iconSize(2), color: _iconColor(2)),
-                      title: Text("Category"),
-                    ),
+                  ListTile(
+                    onTap: () => _onPageChanged(2),
+                    leading: Icon(CupertinoIcons.chat_bubble_text_fill, size: _iconSize(2), color: _iconColor(2)),
+                    title: Text("Category"),
                   ),
                   const SizedBox(
                     height: 20,
                   ),
-                  Expanded(
-                    child: ListTile(
-                      onTap: () => _onPageChanged(3),
-                      leading: Icon(CupertinoIcons.profile_circled, size: _iconSize(3), color: _iconColor(3)),
-                      title: Text("Profile"),
-                    ),
+                  ListTile(
+                    onTap: () => _onPageChanged(3),
+                    leading: Icon(CupertinoIcons.profile_circled, size: _iconSize(3), color: _iconColor(3)),
+                    title: Text("Profile"),
                   ),
                 ],
               ),
